@@ -1,0 +1,12 @@
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+      xmlns:app="http://schemas.android.com/apk/res-auto"
+      xmlns:tools="http://schemas.android.com/tools"
+      tools:context="com.msamogh.firstapp.admin.ManageCommunitiesActivity">
+    <item
+        android:id="@+id/action_sync"
+        android:orderInCategory="100"
+        android:icon="@drawable/sync"
+        android:title="@string/sync"
+        app:showAsAction="always"/>
+
+</menu>

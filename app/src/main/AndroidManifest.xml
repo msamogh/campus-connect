@@ -1,0 +1,105 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.msamogh.firstapp" >
+
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <uses-permission android:name="android.permission.ACCESS_WIFI_STATE" />
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.MANAGE_DOCUMENTS" />
+
+    <!-- To auto-complete the email text field in the login form with the user's emails -->
+    <uses-permission android:name="android.permission.CAMERA" />
+
+    <application
+        android:name=".Application"
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:theme="@style/AppTheme" >
+        <activity
+            android:name=".LoginActivity"
+            android:label="Campus"
+            android:theme="@style/Background" >
+        </activity>
+        <activity
+            android:name=".SignupActivity"
+            android:label="Sign Up"
+            android:theme="@style/Background" >
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="com.msamogh.firstapp.LoginActivity" />
+        </activity>
+        <activity
+            android:name=".MainActivity"
+            android:label="@string/app_name"
+            android:launchMode="singleTop"
+            android:theme="@style/NoAnimation" />
+        <activity
+            android:name=".admin.ManageCommunitiesActivity"
+            android:label="@string/title_activity_manage_communties"
+            android:parentActivityName=".MainActivity" >
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="com.msamogh.firstapp.MainActivity" />
+        </activity>
+        <activity
+            android:name=".admin.CreateCommunityActivity"
+            android:label="@string/title_activity_create_community"
+            android:parentActivityName=".MainActivity" >
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="com.msamogh.firstapp.MainActivity" />
+        </activity>
+        <activity
+            android:name=".admin.CreatePostActivity"
+            android:label="@string/title_activity_create_post" />
+        <activity
+            android:name=".admin.CreateEventActivity"
+            android:label="@string/title_activity_create_event"
+            android:parentActivityName=".admin.ManageCommunitiesActivity" >
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="com.msamogh.firstapp.admin.ManageCommunitiesActivity" />
+        </activity>
+        <activity
+            android:name=".admin.CommunityActivity"
+            android:label="@string/title_activity_community"
+            android:parentActivityName=".admin.ManageCommunitiesActivity" >
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="com.msamogh.firstapp.admin.ManageCommunitiesActivity" />
+        </activity>
+        <activity
+            android:name=".SettingsActivity"
+            android:label="@string/title_activity_settings"
+            android:parentActivityName=".MainActivity" >
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="com.msamogh.firstapp.MainActivity" />
+        </activity>
+        <activity
+            android:name=".ImageShowcaseActivity"
+            android:configChanges="orientation|keyboardHidden|screenSize"
+            android:label="@string/title_activity_image_showcase"
+            android:theme="@style/FullscreenTheme" />
+        <activity
+            android:name=".AboutUsActivity"
+            android:label="@string/title_activity_about_us"
+            android:parentActivityName=".SettingsActivity" >
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="com.msamogh.firstapp.SettingsActivity" />
+        </activity>
+        <activity
+            android:name=".SplashScreenActivity"
+            android:label="@string/title_activity_splash_screen" >
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+    </application>
+
+</manifest>

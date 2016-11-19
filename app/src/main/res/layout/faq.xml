@@ -1,0 +1,183 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="8dp"
+        android:scrollbarAlwaysDrawVerticalTrack="false"
+        android:scrollbarSize="0dp"
+        android:scrollbarStyle="insideOverlay"
+        android:scrollbars="none">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="1dp"
+                android:layout_marginTop="15dp"
+                android:gravity="left"
+                android:text="1) What is Campus? "
+                android:textSize="14sp"
+                android:textStyle="bold" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="10dp"
+                android:layout_marginTop="0dp"
+                android:gravity="left"
+                android:text="Campus is a simple and elegant application designed to bring information to end users whilst maintaining their privacy. It consists of two primary entities, users and communities. Users can subscribe to whichever community they prefer and they will receive posts from that community on their feed. "
+                android:textSize="14sp"
+                android:textStyle="normal" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="1dp"
+                android:layout_marginTop="10dp"
+                android:gravity="left"
+                android:text="2) When should you subscribe to a community? "
+                android:textSize="14sp"
+                android:textStyle="bold" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="10dp"
+                android:layout_marginTop="0dp"
+                android:gravity="left"
+                android:text="You should subscribe to a community when you are interested in that particular subject or you want frequent updates from that particular community."
+                android:textSize="14sp"
+                android:textStyle="normal" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="1dp"
+                android:layout_marginTop="10dp"
+                android:gravity="left"
+                android:text="3) How to subscribe to a community?"
+                android:textSize="14sp"
+                android:textStyle="bold" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="10dp"
+                android:layout_marginTop="0dp"
+                android:gravity="left"
+                android:text="You can subscribe to a community by searching for it and pressing the 'pin' symbol across it. If it is a private community, then you can request to be a member and the admin of that community will accept/decline your request. All subscribed communities appear in the drawer."
+                android:textSize="14sp"
+                android:textStyle="normal" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="1dp"
+                android:layout_marginTop="10dp"
+                android:gravity="left"
+                android:text="4) What is a private community? "
+                android:textSize="14sp"
+                android:textStyle="bold" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="10dp"
+                android:layout_marginTop="0dp"
+                android:gravity="left"
+                android:text="A private community is a community to which users cannot directly subscribe, but can request to subscribe."
+                android:textSize="14sp"
+                android:textStyle="normal" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="1dp"
+                android:layout_marginTop="10dp"
+                android:gravity="left"
+                android:text="5) How to create your own community? "
+                android:textSize="14sp"
+                android:textStyle="bold" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="10dp"
+                android:layout_marginTop="0dp"
+                android:gravity="left"
+                android:text="You can create your community by clicking on the menu in the feed and choosing 'Create Community'. "
+                android:textSize="14sp"
+                android:textStyle="normal" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="1dp"
+                android:layout_marginTop="10dp"
+                android:gravity="left"
+                android:text="6) Where to create various posts and events for your community? "
+                android:textSize="14sp"
+                android:textStyle="bold" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="10dp"
+                android:layout_marginTop="0dp"
+                android:gravity="left"
+                android:text="You can do this by clicking on the menu in the feed and choosing 'My Communities'. Here, choose one community and click on the '+' button to create a post/event. "
+                android:textSize="14sp"
+                android:textStyle="normal" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="1dp"
+                android:layout_marginTop="10dp"
+                android:gravity="left"
+                android:text="7) How to delete a community? "
+                android:textSize="14sp"
+                android:textStyle="bold" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="10dp"
+                android:layout_marginTop="0dp"
+                android:gravity="left"
+                android:text="In 'My communities', select the community you want to delete and click on the menu button there and choose 'Delete Community' . "
+                android:textSize="14sp"
+                android:textStyle="normal" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="1dp"
+                android:layout_marginTop="10dp"
+                android:gravity="left"
+                android:text="8) How to access all major settings in the application? "
+                android:textSize="14sp"
+                android:textStyle="bold" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="10dp"
+                android:layout_marginTop="0dp"
+                android:gravity="left"
+                android:text="In the feed, click on menu and choose 'Settings'. "
+                android:textSize="14sp"
+                android:textStyle="normal" />
+
+
+        </LinearLayout>
+    </ScrollView>
+</LinearLayout>

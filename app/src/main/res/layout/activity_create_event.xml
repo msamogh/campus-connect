@@ -1,0 +1,214 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              xmlns:app="http://schemas.android.com/apk/res-auto"
+              xmlns:tools="http://schemas.android.com/tools"
+              android:layout_width="match_parent"
+              android:layout_height="match_parent"
+              android:background="#fff"
+              android:orientation="vertical"
+              tools:context="com.msamogh.firstapp.admin.CreateEventActivity">
+
+    <android.support.v7.widget.Toolbar
+        android:id="@+id/toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="?attr/actionBarSize"
+        android:background="?attr/colorPrimary"
+        android:elevation="3dp"
+        android:theme="@style/ThemeOverlay.AppCompat.Dark.ActionBar"
+        app:popupTheme="@style/ThemeOverlay.AppCompat.Light">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="horizontal">
+
+            <ImageView
+                android:id="@+id/discard"
+                android:layout_width="25dp"
+                android:layout_height="25dp"
+                android:layout_gravity="center"
+                android:gravity="center_vertical"
+                android:src="@drawable/ic_close_white_24dp"
+                android:textColor="#fff"/>
+
+            <com.msamogh.firstapp.view.RobotoTextView
+                android:id="@+id/textViewNewEvent"
+                style="@style/Base.TextAppearance.AppCompat.Widget.ActionBar.Title.Inverse"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_gravity="center_vertical"
+                android:layout_marginLeft="20dp"
+                android:gravity="center_vertical"
+                android:text="@string/new_event"
+                android:textColor="#fff"/>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_gravity="center_vertical"
+                android:gravity="center_vertical|right"
+                android:orientation="horizontal">
+
+
+                <com.msamogh.firstapp.view.RobotoBoldTextView
+                    android:id="@+id/post"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:layout_gravity="center_vertical"
+                    android:gravity="center_vertical|right"
+                    android:padding="15dp"
+                    android:text="@string/create"
+                    android:textAllCaps="true"
+                    android:textColor="#fff"
+                    android:textSize="14sp"
+                    android:textStyle="bold"/>
+
+            </LinearLayout>
+
+        </LinearLayout>
+
+    </android.support.v7.widget.Toolbar>
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+
+            <EditText
+                android:id="@+id/name"
+                android:layout_width="match_parent"
+                android:layout_height="?attr/actionBarSize"
+                android:background="#fff"
+                android:hint="@string/event_name"
+                android:padding="15dp"
+                android:singleLine="true"
+                android:textColor="#333"
+                android:textColorHint="#777"/>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:background="#e5e5e5"/>
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center_horizontal"
+                android:orientation="horizontal"
+                android:weightSum="2 ">
+
+                <Button
+                    android:id="@+id/date"
+                    style="?android:buttonBarStyle"
+                    android:layout_width="wrap_content"
+                    android:layout_height="?attr/actionBarSize"
+                    android:layout_weight="1"
+                    android:onClick="showDatePickerDialog"
+                    android:text="Set Date"
+                    android:textSize="15sp"/>
+
+                <Button
+                    android:id="@+id/time"
+                    style="?android:buttonBarStyle"
+                    android:layout_width="wrap_content"
+                    android:layout_height="?attr/actionBarSize"
+                    android:layout_weight="1"
+                    android:onClick="showTimePickerDialog"
+                    android:text="Set Time"
+                    android:textSize="15sp"/>
+
+            </LinearLayout>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:background="#e5e5e5"/>
+
+            <EditText
+                android:id="@+id/location"
+                android:layout_width="match_parent"
+                android:layout_height="?attr/actionBarSize"
+                android:background="#fff"
+                android:hint="Add location"
+                android:padding="15dp"
+                android:singleLine="true"
+                android:textColor="#333"
+                />
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:background="#e5e5e5"/>
+
+            <EditText
+                android:id="@+id/contact"
+                android:layout_width="match_parent"
+                android:layout_height="?attr/actionBarSize"
+                android:background="#fff"
+                android:hint="Contact phone or email"
+                android:padding="15dp"
+                android:singleLine="true"
+                android:textColor="#333"
+                android:textColorHint="#777"/>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:background="#e5e5e5"/>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="?attr/actionBarSize"
+                android:orientation="horizontal"
+                >
+
+                <TextView
+                    android:id="@+id/textView2"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_gravity="left"
+                    android:layout_weight="1"
+                    android:gravity="center_vertical"
+                    android:padding="15dp"
+                    android:text="Request RSVP?"
+                    android:textSize="18sp"
+                    />
+
+                <Switch
+                    android:id="@+id/rsvp"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_gravity="end|center_vertical"
+                    android:layout_weight="1"
+                    android:checked="true"
+                    android:padding="15dp"/>
+
+            </LinearLayout>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:background="#e5e5e5"/>
+
+            <EditText
+                android:id="@+id/description"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="#fff"
+                android:gravity="top"
+                android:hint="Event Details"
+                android:inputType="textMultiLine"
+                android:isScrollContainer="false"
+                android:padding="15dp"
+                android:textColor="#333"
+                android:textColorHint="#777"/>
+
+        </LinearLayout>
+    </ScrollView>
+
+</LinearLayout>

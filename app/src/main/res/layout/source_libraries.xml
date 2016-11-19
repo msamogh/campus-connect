@@ -1,0 +1,181 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="7dp"
+        android:scrollbars="none"
+        android:scrollbarSize="0dp"
+        android:scrollbarAlwaysDrawVerticalTrack="false"
+        android:scrollbarStyle="insideOverlay">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="left"
+                android:textSize="18sp"
+                android:id="@+id/begin"
+                android:textStyle="bold"
+                android:text="Open Source Libraries " />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="15dp"
+                android:layout_marginBottom="8dp"
+                android:gravity="left"
+                android:textSize="14sp"
+                android:id="@+id/one"
+                android:textStyle="normal"
+                android:text="Parse: 'com.parse.bolts:bolts-android:1.+' " />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="left"
+                android:textSize="14sp"
+                android:id="@+id/two"
+                android:layout_marginBottom="8dp"
+                android:textStyle="normal"
+                android:text="Material Drawer: 'com.mikepenz:materialdrawer:3.0.8' " />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="left"
+                android:textSize="14sp"
+                android:id="@+id/three"
+                android:layout_marginBottom="8dp"
+                android:textStyle="normal"
+                android:text="Material Dialogs: 'com.afollestad:material-dialogs:0.7.6.0' " />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="left"
+                android:textSize="14sp"
+                android:layout_marginBottom="8dp"
+                android:textStyle="normal"
+                android:text="Cards Library: 'com.github.gabrielemariotti.cards:cardslib-core:2.1.0' " />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="left"
+                android:layout_marginBottom="8dp"
+                android:textSize="14sp"
+                android:textStyle="normal"
+                android:text="PrettyTime: 'org.ocpsoft.prettytime:prettytime:4.0.0.Final' " />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="left"
+                android:layout_marginBottom="8dp"
+                android:textSize="14sp"
+                android:textStyle="normal"
+                android:text="Material Tabs: 'io.karim:materialtabs:2.0.2' " />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="left"
+                android:layout_marginBottom="8dp"
+                android:textSize="14sp"
+                android:textStyle="normal"
+                android:text="Custom Use: 'com.nineoldandroids:library:2.4.0' " />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="left"
+                android:layout_marginBottom="8dp"
+                android:textSize="14sp"
+                android:textStyle="normal"
+                android:text="Custom Use: 'com.daimajia.easing:library:1.0.1@aar' " />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="left"
+                android:layout_marginBottom="8dp"
+                android:textSize="14sp"
+                android:textStyle="normal"
+                android:text="Animations: 'com.daimajia.androidanimations:library:1.1.3@aar' " />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="left"
+                android:layout_marginBottom="8dp"
+                android:textSize="14sp"
+                android:textStyle="normal"
+                android:text="Pull: 'com.github.chrisbanes.actionbarpulltorefresh:extra-abc:+' " />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="left"
+                android:layout_marginBottom="8dp"
+                android:textSize="14sp"
+                android:textStyle="normal"
+                android:text="Buttons: 'com.getbase:floatingactionbutton:1.9.1' " />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="left"
+                android:layout_marginBottom="8dp"
+                android:textSize="14sp"
+                android:textStyle="normal"
+                android:text="Progress Views: 'com.github.rahatarmanahmed:circularprogressview:2.3.2' " />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="left"
+                android:layout_marginBottom="8dp"
+                android:textSize="14sp"
+                android:textStyle="normal"
+                android:text="Design: 'com.android.support:design:22.2.0' " />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="left"
+                android:layout_marginBottom="8dp"
+                android:textSize="14sp"
+                android:textStyle="normal"
+                android:text="Icons: Icons Designed by FREEPIK " />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="left"
+                android:layout_marginBottom="8dp"
+                android:textSize="14sp"
+                android:textStyle="normal"
+                android:text="Recycler View: 'com.android.support:recyclerview-v7:+' " />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="left"
+                android:layout_marginBottom="8dp"
+                android:textSize="14sp"
+                android:textStyle="normal"
+                android:text="Play Services: 'com.google.android.gms:play-services:7.5.0' " />
+
+        </LinearLayout>
+
+
+    </ScrollView>
+</RelativeLayout>

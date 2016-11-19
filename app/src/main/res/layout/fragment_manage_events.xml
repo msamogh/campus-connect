@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    android:id="@+id/rel"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:fab="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:id="@+id/list_wrapper"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:gravity="center_vertical"
+        android:orientation="vertical">
+
+        <com.github.rahatarmanahmed.cpv.CircularProgressView
+            android:id="@+id/progress_view"
+            xmlns:app="http://schemas.android.com/apk/res-auto"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:layout_gravity="center"
+            android:layout_marginTop="14dp"
+            android:gravity="center"
+            android:visibility="gone"
+            app:cpv_animAutostart="true"
+            app:cpv_indeterminate="true"/>
+
+        <ListView
+            android:id="@+id/list"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"/>
+    </LinearLayout>
+
+
+    <com.getbase.floatingactionbutton.AddFloatingActionButton
+        android:id="@+id/new_event"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@id/list_wrapper"
+        android:layout_alignRight="@id/list_wrapper"
+        android:layout_centerHorizontal="true"
+        android:layout_margin="18dp"
+        fab:fab_colorNormal="#D14836"
+        fab:fab_colorPressed="#D14836"
+        fab:fab_plusIconColor="@color/white"/>
+
+</RelativeLayout>

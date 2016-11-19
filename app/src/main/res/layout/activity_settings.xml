@@ -1,0 +1,298 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#fff"
+    tools:context="com.msamogh.firstapp.SettingsActivity">
+
+    <android.support.v7.widget.Toolbar xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        android:id="@+id/toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="?attr/actionBarSize"
+        android:background="?attr/colorPrimary"
+        android:elevation="4dp"
+        android:theme="@style/ThemeOverlay.AppCompat.Dark.ActionBar"
+        app:popupTheme="@style/ThemeOverlay.AppCompat.Light" />
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@id/toolbar"
+        android:paddingBottom="5dp"
+        android:paddingLeft="15dp"
+        android:paddingRight="15dp"
+        android:paddingTop="6dp"
+        android:scrollbarAlwaysDrawVerticalTrack="false"
+        android:scrollbarSize="0dp"
+        android:scrollbarStyle="insideOverlay"
+        android:scrollbars="none">
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/main_Account"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="left|center_vertical"
+                android:background="#fff"
+                android:padding="15dp"
+                android:text="Account"
+                android:textAllCaps="true"
+                android:textColor="#333"
+                android:textSize="18sp" />
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="2dp"
+                android:background="?attr/colorPrimary" />
+
+            <TextView
+                android:id="@+id/Account_edit"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="left|center_vertical"
+                android:background="#fff"
+                android:clickable="true"
+                android:onClick="editName"
+                android:padding="15dp"
+                android:text="Edit Profile Name"
+                android:textColor="#333"
+                android:textSize="16sp" />
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:background="#e5e5e5" />
+
+            <TextView
+                android:id="@+id/Account_change"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="left|center_vertical"
+                android:clickable="true"
+                android:onClick="editPass"
+                android:padding="15dp"
+                android:text="Change Password"
+                android:textColor="#333"
+                android:textSize="16sp" />
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:background="#e5e5e5" />
+
+            <TextView
+                android:id="@+id/Account_Resend"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="left|center_vertical"
+                android:background="#fff"
+                android:clickable="true"
+                android:onClick="resendEmail"
+                android:padding="15dp"
+                android:text="Resend Authentication Email"
+                android:textColor="#333"
+                android:textSize="16sp" />
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:background="#e5e5e5" />
+
+
+            <TextView
+                android:id="@+id/main_People"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="left|center_vertical"
+                android:background="#fff"
+                android:padding="15dp"
+                android:text="People"
+                android:textAllCaps="true"
+                android:textColor="#333"
+                android:textSize="18sp" />
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="2dp"
+                android:background="?attr/colorPrimary" />
+
+            <TextView
+                android:id="@+id/People_invite"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="left|center_vertical"
+                android:background="#fff"
+                android:clickable="true"
+                android:onClick="invite"
+                android:padding="15dp"
+                android:text="Invite Friends"
+                android:textColor="#333"
+                android:textSize="16sp" />
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:background="#e5e5e5" />
+
+            <TextView
+                android:id="@+id/main_Settings"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="left|center_vertical"
+                android:background="#fff"
+                android:padding="15dp"
+                android:text="Settings"
+                android:textAllCaps="true"
+                android:textColor="#333"
+                android:textSize="18sp" />
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="2dp"
+                android:background="?attr/colorPrimary" />
+
+
+            <TextView
+                android:id="@+id/Settings_use"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="left|center_vertical"
+                android:clickable="true"
+                android:onClick="usage"
+                android:padding="15dp"
+                android:text="Data Usage"
+                android:textColor="#333"
+                android:textSize="16sp" />
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:background="#e5e5e5" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="?attr/actionBarSize"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:id="@+id/Settings_push"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="left|center_vertical"
+                    android:background="#fff"
+                    android:padding="15dp"
+                    android:text="Notifications"
+                    android:textColor="#333"
+                    android:textSize="16sp" />
+
+                <Switch
+                    android:id="@+id/c_private"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_gravity="right|center_vertical"
+                    android:checked="true"
+                    android:padding="15dp" />
+
+            </LinearLayout>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:background="#e5e5e5" />
+
+            <TextView
+                android:id="@+id/main_About"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="left|center_vertical"
+                android:background="#fff"
+                android:padding="15dp"
+                android:text="About"
+                android:textAllCaps="true"
+                android:textColor="#333"
+                android:textSize="18sp" />
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="2dp"
+                android:background="?attr/colorPrimary" />
+
+            <TextView
+                android:id="@+id/About_us"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="left|center_vertical"
+                android:background="#fff"
+                android:clickable="true"
+                android:onClick="about"
+                android:padding="15dp"
+                android:text="About Us"
+                android:textColor="#333"
+                android:textSize="16sp" />
+
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:background="#e5e5e5" />
+
+            <TextView
+                android:id="@+id/FAQ"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="left|center_vertical"
+                android:clickable="true"
+                android:onClick="faq"
+                android:padding="15dp"
+                android:text="FAQ"
+                android:textColor="#333"
+                android:textSize="16sp" />
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:background="#e5e5e5" />
+
+            <TextView
+                android:id="@+id/About_libraries"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="left|center_vertical"
+                android:clickable="true"
+                android:onClick="source"
+                android:padding="15dp"
+                android:text="Open Source Libraries"
+                android:textColor="#333"
+                android:textSize="16sp" />
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:background="#e5e5e5" />
+
+            <TextView
+                android:id="@+id/About_Terms"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="left|center_vertical"
+                android:background="#fff"
+                android:clickable="true"
+                android:onClick="terms"
+                android:padding="15dp"
+                android:text="Terms of Service"
+                android:textColor="#333"
+                android:textSize="16sp" />
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:background="#e5e5e5" />
+        </LinearLayout>
+    </ScrollView>
+</RelativeLayout>
